@@ -1,6 +1,14 @@
 = rMeetup2
 
-A Ruby gem to access the Meetup API 2. Please note that this Gem is not usable yet.
+A Ruby gem to access the Meetup API 2. For now, this is very simple but I wish to implement new features in the future.
+
+== Code Sample
+
+  RMeetup2::Client.api_key= "YOUR API KEY"
+  results = RMeetup2::Request.new('categories').execute()
+  results.each do |result|
+    puts result["name"] #or something else
+  end
 
 == Contributing to rMeetup2
  
