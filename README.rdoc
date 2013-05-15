@@ -1,6 +1,6 @@
 = rMeetup2
 
-Description goes here.
+A Ruby gem to access the Meetup API 2. Please note that this Gem is not usable yet.
 
 == Contributing to rMeetup2
  
