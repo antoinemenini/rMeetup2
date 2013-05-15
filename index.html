@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rmeetup2 by antoinemenini</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/antoinemenini/rMeetup2">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/antoinemenini/rMeetup2/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/antoinemenini/rMeetup2/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Rmeetup2</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/antoinemenini">antoinemenini</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>rMeetup2</h1>
+
+<p>A Ruby gem to access the Meetup API 2. For now, this is very simple but I wish to implement new features in the future.</p>
+
+<h2>Code Sample</h2>
+
+<div class="highlight"><pre>  <span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Client</span><span class="o">.</span><span class="n">api_key</span><span class="o">=</span> <span class="s2">"YOUR API KEY"</span>
+  <span class="n">results</span> <span class="o">=</span> <span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Request</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'categories'</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+  <span class="n">results</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">result</span><span class="o">|</span>
+    <span class="nb">puts</span> <span class="n">result</span><span class="o">[</span><span class="s2">"name"</span><span class="o">]</span> <span class="c1">#or something else</span>
+  <span class="k">end</span>
+</pre></div>
+
+<h2>Contributing to rMeetup2</h2>
+
+<ul>
+<li>Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.</li>
+<li>Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.</li>
+<li>Fork the project.</li>
+<li>Start a feature/bugfix branch.</li>
+<li>Commit and push until you are happy with your contribution.</li>
+<li>Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.</li>
+<li>Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.</li>
+</ul><h2>Copyright</h2>
+
+<p>Copyright (c) 2013 Antoine Menini. See LICENSE.txt for
+further details.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
