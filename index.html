@@ -44,14 +44,35 @@
 
 <h2>Code Sample</h2>
 
-<div class="highlight"><pre>  <span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Client</span><span class="o">.</span><span class="n">api_key</span><span class="o">=</span> <span class="s2">"YOUR API KEY"</span>
-  <span class="n">results</span> <span class="o">=</span> <span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Request</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'categories'</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
-  <span class="n">results</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">result</span><span class="o">|</span>
-    <span class="nb">puts</span> <span class="n">result</span><span class="o">[</span><span class="s2">"name"</span><span class="o">]</span> <span class="c1">#or something else</span>
-  <span class="k">end</span>
+<div class="highlight"><pre><span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Client</span><span class="o">.</span><span class="n">api_key</span><span class="o">=</span> <span class="s2">"YOUR API KEY"</span>
+<span class="n">results</span> <span class="o">=</span> <span class="ss">RMeetup2</span><span class="p">:</span><span class="ss">:Request</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:categories</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+<span class="n">results</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">result</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">result</span><span class="o">[</span><span class="s2">"name"</span><span class="o">]</span> <span class="c1">#or something else</span>
+<span class="k">end</span>
 </pre></div>
 
-<h2>Contributing to rMeetup2</h2>
+<p>Possible data models :</p>
+
+<ul>
+<li>
+<code>:categories</code> (<a href="http://www.meetup.com/meetup_api/docs/2/categories/">API doc</a>)</li>
+<li>
+<code>:checkins</code> (<a href="http://www.meetup.com/meetup_api/docs/2/checkins/">API doc</a>)</li>
+<li>
+<code>:cities</code> (<a href="http://www.meetup.com/meetup_api/docs/2/cities/">API doc</a>)</li>
+<li>
+<code>:events</code> (<a href="http://www.meetup.com/meetup_api/docs/2/events/">API doc</a>)</li>
+<li>
+<code>:groups</code> (<a href="http://www.meetup.com/meetup_api/docs/2/groups/">API doc</a>)</li>
+<li>
+<code>:groups3</code> (<a href="http://www.meetup.com/meetup_api/docs/find/groups/">API doc</a>)</li>
+<li>
+<code>:topics</code> (<a href="http://www.meetup.com/meetup_api/docs/topics/">API doc</a>)</li>
+<li>
+<code>:members</code> (<a href="http://www.meetup.com/meetup_api/docs/2/members/">API doc</a>)</li>
+<li>
+<code>:rsvps</code> (<a href="http://www.meetup.com/meetup_api/docs/2/rsvps/">API doc</a>)</li>
+</ul><h2>Contributing to rMeetup2</h2>
 
 <ul>
 <li>Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.</li>
