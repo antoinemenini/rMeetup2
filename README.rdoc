@@ -12,6 +12,11 @@ results.each do |result|
 end
 ```
 
+You can also add parameters like this :
+```ruby
+results = RMeetup2::Request.new(:cities, {:page => "5"}).execute()
+```
+
 Possible data models :
 * `:categories` ([API doc](http://www.meetup.com/meetup_api/docs/2/categories/))
 * `:checkins` ([API doc](http://www.meetup.com/meetup_api/docs/2/checkins/))

@@ -20,7 +20,8 @@ module RMeetup2
     end
 
     def execute
-      response = Nestful.get("https://api.meetup.com/#{@model}?key=#{ @params[:key]}")
+      param_str = @params.map{|k,v| "#{k.to_s}=#{v}"}.join('&')
+      response = Nestful.get("https://api.meetup.com/#{@model}?#{param_str}")
       # http response available in : response.status
       return JSON.parse(response.body)["results"]
     end
