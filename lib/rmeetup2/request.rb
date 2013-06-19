@@ -6,7 +6,7 @@ module RMeetup2
       :checkins => '2/checkins',
       :cities => '2/cities',
       :events => '2/events',
-      
+      :open_events => '2/open_events',
       :groups => '2/groups',
       :groups3 => 'find/groups',
       :topics => 'topics',
