@@ -1,7 +1,7 @@
 require 'nestful'
 require 'rubygems'
 require 'json'
-require './rmeetup2/request.rb'
+require '/rmeetup2/request.rb'
 
 module RMeetup2
 
